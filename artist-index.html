@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Artist</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container  container-header">
+            <div class="row">
+                <div class="xl:col-6 lg:col-6 md:col-6 sm:col-6">
+                    <div class="header__title">
+                        <h3><a href="index.html"><i class="fa-solid fa-store"></i></a><a href="index.html"> NFT
+                                Marketplace</a></h3>
+                    </div>
+                    <!-- /.header__title -->
+                </div>
+                <div class="xl:col-6 lg:col-6 md:col-6 sm:col-6">
+                    <div class="header__menu">
+                        <ul>
+                            <li><a href="marketplace-index.html">Marketplace</a></li>
+                            <li><a href="rankings-index.html">Rankings</a></li>
+                            <li><a href="wallet-index.html">Connect a wallet</a></li>
+                            <button class="btn btn-purple" type="button" class="btn-solid theme-primary"
+                                data-bs-toggle="dialog" data-bs-target="#staticBackdropDialog"
+                                data-bs-backdrop="static"><i class="fa-regular fa-user"></i> Sign Up</button>
+
+                            <dialog class="dialog" id="staticBackdropDialog">
+                                <div class="dialog-header">
+                                    <h1>Login</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="dialog-body">
+                                    <div class="dialog__input">
+                                        <input type="email" placeholder="Username"><br>
+                                        <input type="password" placeholder="Password">
+                                    </div>
+                                    <a href="#">Forget password?</a><br>
+                                    <div class="btn btn-login">Login</div><br>
+                                    <a href="#" class="bottom__a">Don'have an account <span><a
+                                                href="sign-index.html">sign up</a></span></a>
+                                </div>
+                            </dialog>
+                        </ul>
+                    </div>
+
+                    <div class="header__bars">
+                        <button class="btn btn-bars btn-solid theme-primary" type="button" data-bs-toggle="drawer"
+                            data-bs-target="#drawerExample" aria-controls="drawerExample">
+                            <i class="fa-solid fa-bars type=" button data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                        </button>
+                        <dialog class="drawer drawer-start" tabindex="-1" id="drawerExample"
+                            aria-labelledby="drawerExampleLabel">
+                            <div class="drawer-header">
+                                <h5 class="drawer-title" id="drawerExampleLabel">
+                                    <a href="index.html"><i class="fa-solid fa-store"></i></a><a href="index.html"> NFT
+                                        Marketplace</a>
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="drawer"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="drawer-body">
+                                <div>
+                                    Explore unique NFTs, discover talented creators, and own digital art that inspires
+                                    you. Start your collection today!
+                                </div>
+                                <div class="mt-3">
+                                    <button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu">
+                                        Menu
+                                    </button>
+                                    <button class="btn btn-purple btn__purple-bars" type="button" class="btn-solid theme-primary"
+                                        data-bs-toggle="dialog" data-bs-target="#staticBackdropDialog"
+                                        data-bs-backdrop="static">Sign Up</button>
+
+                                    <dialog class="dialog" id="staticBackdropDialog">
+                                        <div class="dialog-header">
+                                            <h1>Login</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="dialog-body">
+                                            <div class="dialog__input">
+                                                <input type="email" placeholder="Username"><br>
+                                                <input type="password" placeholder="Password">
+                                            </div>
+                                            <a href="#">Forget password?</a><br>
+                                            <div class="btn btn-login">Login</div><br>
+                                            <a href="#" class="bottom__a">Don'have an account <span><a
+                                                        href="sign-index.html">sign up</a></span></a>
+                                        </div>
+                                    </dialog>
+                                    <div class="menu">
+                                        <li><a href="marketplace-index.html">Marketplace</a></li>
+                                        <li><a href="rankings-index.html">Rankings</a></li>
+                                        <li><a href="wallet-index.html">Connect a wallet</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <section class="home-artist">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="home-artist__img">
+                        <img src="img/Avatar (5).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.home -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="xl:col-6 lg:col-6 md:col-12 md:col-12">
+                    <div class="hero__title">
+                        <h1>Animakid</h1>
+                    </div>
+                    <!-- /.hero__title -->
+                    <div class="hero__cards">
+                        <div class="hero__card">
+                            <span>250k+</span>
+                            <p>Volume</p>
+                        </div>
+                        <!-- /.hero__card -->
+                        <div class="hero__card">
+                            <span>50+</span>
+                            <p>NFTs Sold</p>
+                        </div>
+                        <!-- /.hero__card -->
+                        <div class="hero__card">
+                            <span>3000+</span>
+                            <p>Followers</p>
+                        </div>
+                        <!-- /.hero__card -->
+                    </div>
+                    <!-- /.hero__cards -->
+                    <div class="hero__bio">
+                        <span>Bio</span>
+                        <p>The internet's friendliest designer kid.</p>
+                    </div>
+                    <!-- /.hero__bio -->
+                    <div class="hero__link footer__icon">
+                        <p>Links</p>
+                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-brands fa-discord"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <!-- /.hero__link -->
+                </div>
+                <div class="xl:col-6 lg:col-6 md:col-12 md:col-12">
+                    <div class="hero__btn">
+                        <button class="btn btn-purple"><i class="fa-regular fa-copy"></i> 0xc0E3...B79C</button>
+                        <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i> Follow</button>
+                    </div>
+                    <!-- /.hero__btn -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+    <section class="market">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">Created <span class="market__number">302</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Owned<span
+                                    class="market__number">67</span></button>
+                        </li>
+                        <li class="nav-item nav-item__none" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">Collection<span
+                                    class="market__number">4</span></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="market">
+                        <div class="container">
+                            <div class="row">
+                                <!-- 1-USTON -->
+                                <!-- 1-USTON -->
+                                <!-- 1-USTON -->
+                                <div class="xl:col-4 lg:col-4 md:col-6 sm:col-12">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image.png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>Distant Galaxy</h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>
+                                <div class="xl:col-4 lg:col-4 md:col-6 sm:col-12">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image (1).png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>Life On Edena</h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>
+                                <div class="xl:col-4 lg:col-4 md:col-6 sm:col-12">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image (2).png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>AstroFiction</h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>
+                                <!-- 2-USTON -->
+                                <!-- 2-USTON -->
+                                <!-- 2-USTON -->
+                                <div class="xl:col-4 lg:col-4 md:col-6 market__block-nonetwo">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image (3).png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>CryptoCity</h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>
+                                <div class="xl:col-4 lg:col-4 md:col-6 market__block-nonetwo">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image (4).png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>ColorfulDog 0524</h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>
+                                <div class="xl:col-4 lg:col-4 md:col-6 market__block-nonetwo">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image (5).png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>Space Tales</h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>
+                                <!-- 3-USTON -->
+                                <!-- 3-USTON -->
+                                <!-- 3-USTON -->
+                                <div class="xl:col-4 lg:col-4 market__block-noneone">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image (6).png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>Cherry Blossom Girl 037</h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>  
+                                <div class="xl:col-4 lg:col-4 market__block-noneone">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image (7).png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>Dancing Robots 0987</h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>
+                                <div class="xl:col-4 lg:col-4 market__block-noneone">
+                                    <div class="market__card">
+                                        <div class="market__img">
+                                            <img src="img/Image (8).png" alt="">
+                                        </div>
+                                        <!-- /.discover__img -->
+                                        <div class="market__subtitle">
+                                            <h2>IceCream Ape </h2>
+                                        </div>
+                                        <!-- /.discover__subtitle -->
+                                        <div class="market__bottom">
+                                            <div class="market__comment">
+                                                <img src="img/Avatar (2).png" alt="">
+                                                <p>MoonDancer</p>
+                                            </div>
+                                            <!-- /.discover__comment -->
+                                            <div class="market__blocks">
+                                                <div class="market__block">
+                                                    <span>Price</span>
+                                                    <p>1.63 ETH</p>
+                                                </div>
+                                                <div class="market__block">
+                                                    <span>Highest Bid</span>
+                                                    <p>0.33 wETH</p><br>
+                                                </div>
+                                                <!-- /.discover__block -->
+                                            </div>
+                                        </div>
+                                        <!-- /.discover__bottom -->
+                                    </div>
+                                    <!-- /.discover__card -->
+                                </div>
+                                <!-- /.container -->
+                            </div>
+                            <!-- /.tabs -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.tabs -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="xl:col-4 lg:col-4 md:col-12 sm:col-12">
+                    <div class="footer__blocks">
+                        <div class="footer__block">
+                            <div class="footer__logo">
+                                <h3><a href="#"><i class="fa-solid fa-store"></i></a></i> NFT Marketplace</h3>
+                            </div>
+                            <div class="footer__text">
+                                <p>NFT marketplace UI created with Anima for Figma.</p>
+                            </div>
+                            <!-- /.footer__text -->
+                            <div class="footer__icon">
+                                <i class="fa-brands fa-discord"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                        <!-- /.footer__block -->
+                    </div>
+                </div>
+                <div class="xl:col-3 lg:col-3 md:col-12 sm:col-12">
+                    <div class="footer__block">
+                        <div class="footer___heading">
+                            <h3>Explore</h3>
+                            <p>Marketplace</p>
+                            <p>Rankings</p>
+                            <p>Connect a wallet</p>
+                        </div>
+                        <!-- /.footer___heading -->
+                    </div>
+                    <!-- /.footer__block -->
+                </div>
+                <div class="xl:col-5 lg:col-5 md:col-12 sm:col-12">
+                    <div class="footer__block">
+                        <div class="footer__textt">
+                            <h1>Join our weekly digest</h1>
+                            <p>Get exclusive promotions & updates straight to your inbox.</p>
+                        </div>
+                        <div class="form__contact">
+                            <input type="email" placeholder="Enter your email here">
+                            <button class="btn btn-purple"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                        </div>
+                    </div>
+                    <!-- /.footer__block -->
+                </div>
+                <div class="xl:col-12 lg:col-12 md:col-12 sm:col-12">
+                    <div class="footer__bottom">
+                        <div class="footer__subtitle">
+                            <p>Ⓒ NFT Market. Use this template freely.</p>
+                        </div>
+                        <!-- /.footer__subtitle -->
+                    </div>
+                    <!-- /.footer__bottom -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
